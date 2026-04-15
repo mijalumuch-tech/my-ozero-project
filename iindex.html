@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Презентація про озеро - Соломія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-green: #4db6ac;
+            --soft-white: #fdfdfd;
+            --text-color: #444;
+            --accent: #ff8a65;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #e0f2f1;
+            padding: 40px 0;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-color);
+        }
+
+        .slide {
+            background: var(--soft-white);
+            width: 1000px;
+            height: 562px; /* Формат 16:9 */
+            margin: 0 auto 40px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        /* Заголовки */
+        h1, h2 {
+            font-family: 'Comfortaa', cursive;
+            color: #26a69a;
+        }
+
+        /* Слайд 1: Титульний */
+        .title-slide {
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('https://images.unsplash.com/photo-1473081556163-2a17281fe7df?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            text-align: center;
+        }
+
+        .title-slide h1 { font-size: 48px; margin-bottom: 15px; }
+        .author { font-size: 20px; font-weight: 500; }
+
+        /* Внутрішній дизайн */
+        .header {
+            padding: 30px 50px 10px;
+            font-size: 30px;
+        }
+
+        .content {
+            padding: 20px 50px 40px;
+            display: flex;
+            gap: 30px;
+            height: 100%;
+        }
+
+        .text { flex: 1.2; font-size: 19px; line-height: 1.5; }
+        .image { flex: 0.8; border-radius: 10px; overflow: hidden; background: #eee; }
+        .image img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* Блоки для типів організмів */
+        .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; width: 100%; }
+        .card { 
+            background: #f1f8f7; 
+            padding: 20px; 
+            border-radius: 12px; 
+            border-bottom: 4px solid var(--main-green);
+        }
+        .card h3 { margin-bottom: 10px; color: #00796b; }
+
+        /* Ланцюжок */
+        .chain {
+            background: #fff;
+            border: 2px dashed #80cbc4;
+            padding: 20px;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 22px;
+        }
+
+        /* Фінальний слайд */
+        .final {
+            background: var(--main-green);
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .final h2 { color: white; font-size: 55px; margin-bottom: 10px; }
+        .final p { font-size: 24px; opacity: 0.9; }
+
+        /* Списки */
+        ul { margin-top: 10px; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+    <!-- Слайд 1 -->
+    <div class="slide title-slide">
+        <h1>Організми та їхні звʼязки<br>в нашому озері</h1>
+        <div class="author">Робота: Лимич Соломія</div>
+    </div>
+
+    <!-- Слайд 2 -->
+    <div class="slide">
+        <h2 class="header">Що таке озеро?</h2>
+        <div class="content">
+            <div class="text">
+                <p>Озеро — це не просто вода. Це справжній будинок, де разом живуть рослини, риби, комахи та бактерії.</p>
+                <p style="margin-top: 15px;">У нашому озері все збалансовано: вода дає життя, сонце дає енергію, а кожен житель має свою "професію". Якщо хтось один зникне, іншим теж буде погано.</p>
+            </div>
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=600" alt="Фото озера">
+            </div>
+        </div>
+    </div>
+
+    <!-- Слайд 3 -->
+    <div class="slide">
+        <h2 class="header">Хто є хто в озері?</h2>
+        <div class="content">
+            <div class="grid">
+                <div class="card">
+                    <h3>Продуценти</h3>
+                    <p>Ті, хто створює їжу (рослини).</p>
+                </div>
+                <div class="card">
+                    <h3>Консументи</h3>
+                    <p>Ті, хто їсть інших (тварини).</p>
+                </div>
+                <div class="card">
+                    <h3>Редуценти</h3>
+                    <p>Ті, хто все переробляє (бактерії).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Слайд 4 -->
+    <div class="slide">
+        <h2 class="header">Продуценти: Рослини</h2>
+        <div class="content">
+            <div class="text">
+                <p>Рослини — це основа озера. Вони забирають сонячне світло і перетворюють його на енергію, а ще дають нам кисень.</p>
+                <ul>
+                    <li><b>Латаття</b> (красиві білі квіти на воді)</li>
+                    <li><b>Ряска</b> (маленькі зелені листочки)</li>
+                    <li><b>Очерет</b>, що росте біля берега</li>
+                    <li><b>Водорості</b>, які ми бачимо у воді</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1503640538573-148065ba4904?auto=format&fit=crop&q=80&w=600" alt="Латаття">
+            </div>
+        </div>
+    </div>
+
+    <!-- Слайд 5 -->
+    <div class="slide">
+        <h2 class="header">Консументи: Тварини</h2>
+        <div class="content">
+            <div class="text">
+                <p>Тварини в озері бувають дуже різні. Кожен має своє місце в ланцюгу живлення:</p>
+                <ul>
+                    <li><b>Мирні:</b> Маленькі рибки, равлики та рачки. Вони їдять водорості.</li>
+                    <li><b>Хижаки:</b> Велика щука, окунь або жаба. Вони полюють на менших за себе.</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?auto=format&fit=crop&q=80&w=600" alt="Риби">
+            </div>
+        </div>
+    </div>
+
+    <!-- Слайд 6 -->
+    <div class="slide">
+        <h2 class="header">Редуценти: Прибиральники</h2>
+        <div class="content">
+            <div class="text">
+                <p>Це дуже важлива, хоч і непомітна група. Це маленькі бактерії та гриби, які живуть на дні.</p>
+                <p style="margin-top: 10px;">Коли хтось помирає або падає листя, вони це "прибирають" і перетворюють на добриво для нових рослин. Без них озеро б просто засмітилося.</p>
+            </div>
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1543089151-1cb51e74bf72?auto=format&fit=crop&q=80&w=600" alt="Дно та мул">
+            </div>
+        </div>
+    </div>
+
+    <!-- Слайд 7 -->
+    <div class="slide">
+        <h2 class="header">Ланцюг живлення</h2>
+        <div class="content" style="flex-direction: column;">
+            <p>В озері всі пов'язані. Один їсть іншого, щоб передати енергію далі:</p>
+            <div class="chain">
+                Водорості → Маленький рачок → Карась → Щука
+            </div>
+            <p style="margin-top: 20px; font-style: italic; color: #666;">
+                Це і є головний закон природи: продуценти годують консументів, а редуценти повертають все у кругообіг.
+            </p>
+        </div>
+    </div>
+
+    <!-- Слайд 8 -->
+    <div class="slide">
+        <h2 class="header">Як людина впливає на озеро?</h2>
+        <div class="content">
+            <div class="text">
+                <p>На жаль, люди часто шкодять озеру навіть не помічаючи цього:</p>
+                <ul>
+                    <li>Залишають сміття на березі (пластик не розкладається).</li>
+                    <li>Виливають брудну воду з мийними засобами.</li>
+                    <li>Забагато ловлять риби, порушуючи рівновагу.</li>
+                </ul>
+                <p style="margin-top: 10px; color: #c62828;"><b>Результат:</b> Вода цвіте, риба гине, озеро перетворюється на болото.</p>
+            </div>
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&q=80&w=600" alt="Забруднення">
+            </div>
+        </div>
+    </div>
+
+    <!-- Слайд 9 -->
+    <div class="slide">
+        <h2 class="header">Що можемо зробити ми?</h2>
+        <div class="content">
+            <div class="text">
+                <p>Зберегти озеро дуже легко, якщо кожен зробить хоча б трішки:</p>
+                <ul>
+                    <li>Завжди забирати сміття з собою.</li>
+                    <li>Не рвати багато латаття (воно швидко в'яне, а в озері прикрашає воду).</li>
+                    <li>Просто любити і поважати природу.</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=600" alt="Природа">
+            </div>
+        </div>
+    </div>
+
+    <!-- Слайд 10 -->
+    <div class="slide final">
+        <h2>Дякую за увагу !</h2>
+        <p>Бережіть природу)</p>
+    </div>
+
+</body>
+</html>
